@@ -1,0 +1,58 @@
+body {
+    background-color: rgba(0, 0, 50, 0.1)
+}
+
+.formListeClient {
+    position: relative;
+}
+
+.searchClient {
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.5rem;
+    padding-left: 30px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.bi-search {
+    color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    font-size: 20px;
+}
+
+.block-icon-search {
+    height: 41px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.blockListeClient {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.blockListeClient h2 {
+    padding: 1rem;
+    background-color: white;
+    width: 80%;
+    border-radius: 5px 5px 5px 5px;
+}
+.listeBlock{
+    width: 80%;
+    background-color: white;
+    padding: 1rem;
+}
+.liste-colonne{
+    display: grid;
+    grid-template-columns: 10% 30% 30% 30%;
+    color: rgba(0,0,0,0.2);
+}
+.liste-colonne h3{
+
+}
