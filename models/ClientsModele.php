@@ -28,7 +28,6 @@ class ClientsModele extends SQL
 
         return $stmt->fetchAll(\PDO::FETCH_CLASS, Client::class);
     }
-
     /**
      * Retourne une liste de client correspondant au critère de recherche
      * @param string $keyword

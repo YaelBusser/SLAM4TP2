@@ -52,7 +52,46 @@ body {
     display: grid;
     grid-template-columns: 10% 30% 30% 30%;
     color: rgba(0,0,0,0.2);
+    position: relative;
 }
 .liste-colonne h3{
 
+}
+.liste-tuple{
+    display: grid;
+    grid-template-columns: 10% 30% 30% 30%;
+    color: rgba(0,0,0,0.5);
+    position: relative;
+}
+.btn-ajouter{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 1px solid green;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0,255,0,0.5);
+    color: green;
+    transition: ease-in-out 0.1s;
+}
+.btn-ajouter:hover{
+    background-color: rgba(0,255,0,0.4);
+    border: 1px solid rgba(0,255,0,0.5);
+    color: white;
+}
+.block-arrows{
+    margin-left: auto;
+    max-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.block-arrows i{
+    font-size: 20px;
 }

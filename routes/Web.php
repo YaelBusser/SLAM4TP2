@@ -18,8 +18,8 @@ class Web
         $test = new Test();
         $clients = new ClientController();
 
-        Route::Add("/", [$clients, "liste"]);
-        Route::Add('/home', [$main, 'home']);
+        Route::Add("/home", [$main, "home"]);
+        Route::Add("/clients/page/{idpage}", [$clients, "liste"]);
         Route::Add("/test/{id}",[$test, "test"]);
 
         //        Exemple de limitation d'accès à une page en fonction de la SESSION.
