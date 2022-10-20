@@ -21,5 +21,6 @@
             ?>
             <li class="nav-item"><a href="./about" class="nav-link">À propos</a></li>
         </ul>
+        <a href="/clients/page/">Clients</a>
     </div>
 </nav>

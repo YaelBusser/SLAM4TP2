@@ -29,7 +29,7 @@ class ClientsModele extends SQL
         return $stmt->fetchAll(\PDO::FETCH_CLASS, Client::class);
     }
     /**
-     * Retourne une liste de client correspondant au critère de recherche
+     * Retourne une clients de client correspondant au critère de recherche
      * @param string $keyword
      * @param int $limit
      * @param int $page
@@ -65,10 +65,11 @@ class ClientsModele extends SQL
         return $this->getPdo()->lastInsertId();
     }
 
-    public function getByClientId($clientId): Client{
+    public function getByClientId(int $clientId): Client{
         $query = "SELECT * FROM client WHERE id = ?";
         $stmt = SQL::getPdo()->prepare($query);
         $stmt->execute([$clientId]);
-        return $stmt->fetch(\PDO::FETCH_CLASS, Client::class);
+        $stmt->setFetchMode(\PDO::FETCH_CLASS, Client::class);
+        return $stmt->fetch();
     }
 }

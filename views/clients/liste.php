@@ -19,7 +19,7 @@
             foreach ($lesClients as $leClient) {
                 ?>
                 <p><?= $leClient->getId(); ?></p>
-                <p><?= $leClient->getNom(); ?> <?= $leClient->getPrenom(); ?></p>
+                <p><a href="/clients/<?= $leClient->getId(); ?>/informations"><?= $leClient->getNom(); ?> <?= $leClient->getPrenom(); ?></a></p>
                 <p><?= $leClient->getTelephone(); ?></p>
                 <p><?= $leClient->getEmail(); ?></p>
             <?php } ?>
@@ -27,13 +27,11 @@
         <div class="block-arrows">
             <?php if ($idpage != 0) {
                 ?>
-                <a href="/clients/page/<?= $idpage - 1; ?>?search=<?= $search; ?>"><i class="bi bi-arrow-left-square-fill"></i></a>
+                <a href="/clients/page/<?= $idpage - 1; ?>?search=<?= $search; ?>" class="idpage"><?= $idpage - 1; ?></a>
             <?php } ?>
-            <?php
-                if(empty($search)){
-            ?>
-            <a href="/clients/page/<?= $idpage + 1; ?>?search=<?= $search; ?>""><i class="bi bi-arrow-right-square-fill"></i></a>
-            <?php } ?>
+
+            <a href="/clients/page/<?= $idpage; ?>?search=<?= $search; ?>" class="idpage"><?= $idpage; ?></a>
+            <a href="/clients/page/<?= $idpage + 1; ?>?search=<?= $search; ?>" class="idpage"><?= $idpage + 1; ?></a>
         </div>
     </div>
 </div>

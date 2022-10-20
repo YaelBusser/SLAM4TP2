@@ -86,6 +86,7 @@ body {
 }
 .block-arrows{
     margin-left: auto;
+    margin-right: auto;
     max-width: 50px;
     display: flex;
     justify-content: center;
@@ -94,4 +95,80 @@ body {
 }
 .block-arrows i{
     font-size: 20px;
+}
+.idpage{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: aqua;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border-radius: 10px 10px 10px 10px;
+}
+.block-profile{
+    background-color: rgba(0,0,0,0.1);
+    width: 1000px;
+    padding: 2rem;
+    border-radius: 0 0 10px 10px;
+}
+.top-profile{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: Algerian;
+    font-size: 12px;
+}
+.top-profile h3{
+    font-weight: bold;
+}
+.bottom-profile{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: Algerian;
+    font-size: 12px;
+}
+.bottom-profile h3{
+    font-weight: bold;
+}
+.block-block-profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: cool;
+    animation-duration: 5s;
+    gap: 20px;
+}
+.titre-top{
+    text-align: left;
+    width: 1000px;
+    font-family: Algerian;
+    background-color: rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 10px 10px 0 0 ;
+}
+.liste-colonne-produits{
+    display: grid;
+    grid-template-columns: 10% 10% 40% 20% 20%;
+    color: rgba(0,0,0,0.8);
+    font-family: Algerian;
+}
+.liste-colonne-produits h4{
+    font-size: 20px;
+}
+.block-produits{
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 0 0 10px 10px;
+}
+.block-block-produits{
+    width: 1000px;
+}
+.liste-tuple-produits{
+    display: grid;
+    grid-template-columns: 10% 10% 40% 20%;
+    color: rgba(0,0,0,0.5);
+    position: relative;
 }

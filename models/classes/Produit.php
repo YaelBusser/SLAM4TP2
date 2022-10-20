@@ -18,7 +18,7 @@ class Produit
     }
 
     /**
-     * Retourne la liste des clients ayant commandé ce produit.
+     * Retourne la clients des clients ayant commandé ce produit.
      * @return Client[]
      */
     public function lesClients(): array

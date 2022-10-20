@@ -82,7 +82,7 @@ class Route
     private function searchForMatchingRoute($target): array
     {
         /**
-         * Cette méthode recherche dans la liste des routes (clefs).
+         * Cette méthode recherche dans la clients des routes (clefs).
          * La correspondance est basée sur une expression régulière.
          * Cela permet de gérer des routes avec un paramètre dynamique type :
          * - /api/sample/{id}
@@ -120,7 +120,7 @@ class Route
 
             $match = $matches[0];
             // Extraction des paramètres présent dans la route, pour les mettres
-            // dans la liste des arguments passé à la méthode.
+            // dans la clients des arguments passé à la méthode.
             foreach (array_keys($matches[1]) as $inPathParameters) {
                 if (is_string($inPathParameters)) {
                     $args[$inPathParameters] = $matches[1][$inPathParameters][0];

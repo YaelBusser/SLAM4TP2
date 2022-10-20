@@ -21,7 +21,7 @@ class Client
     }
 
     /**
-     * Retourne la liste des adresses du client
+     * Retourne la clients des adresses du client
      * @return Adresse[]
      */
     public function lesAdresses(): array {
@@ -29,7 +29,7 @@ class Client
     }
 
     /**
-     * Retourne la liste des produits du client
+     * Retourne la clients des produits du client
      * @return Produit[]
      */
     public function lesProduits(): array

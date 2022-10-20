@@ -28,7 +28,7 @@ class ProduitsModele extends SQL
     }
 
     /**
-     * Retourne la liste des clients ayant commandé le produit $produitId
+     * Retourne la clients des clients ayant commandé le produit $produitId
      * @param string $produitId
      * @return Client[]
      */
